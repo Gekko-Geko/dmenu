@@ -1,7 +1,11 @@
 /* See LICENSE file for copyright and license details. */
 
-#include </home/geko/.cache/wal/colors-wal-dmenu.h>
-/* Default settings; can be overriden by command line. */
+static const char *colors[SchemeLast][2] = {
+        /*     fg         bg       */
+        [SchemeNorm] = { "#bbbbbb", "#121019" },
+        [SchemeSel] = { "#eeeeee", "#FF7F50" },
+        [SchemeOut] = { "#000000", "#DEA69D" },
+};
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
